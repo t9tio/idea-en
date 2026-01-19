@@ -1,0 +1,110 @@
+name: Submit Idea (English)
+description: Submit your product idea
+title: "[Idea]: "
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 1. About You
+
+  - type: textarea
+    id: who-are-you
+    attributes:
+      label: Who are you?
+      description: Your professional background, areas of expertise, or social media links
+    validations:
+      required: true
+
+  - type: textarea
+    id: your-story
+    attributes:
+      label: Your Story
+      description: Please describe in one sentence the situation in which you discovered this problem.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 2. The Pain Point
+
+  - type: textarea
+    id: pain-point
+    attributes:
+      label: Pain Point Description
+      description: If this problem is not solved, what specific losses does it cause for you or your peers? (e.g., wasting 2 hours daily, losing customers, feeling anxious, etc.)
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-solution
+    attributes:
+      label: Current "Workaround"
+      description: Before this App existed, how did you deal with this problem? (If you haven't tried any solution, the pain point may not be deep enough)
+    validations:
+      required: true
+
+  - type: textarea
+    id: who-else
+    attributes:
+      label: Who are the other 100 people?
+      description: Besides yourself, who else would encounter the same problem? Where do they usually gather?
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 3. The Product
+
+  - type: textarea
+    id: mvp-features
+    attributes:
+      label: Core Features (MVP)
+      description: If the first version can only have 3 features, what would they be?
+      placeholder: |
+        1. [Feature 1]
+        2. [Feature 2]
+        3. [Feature 3]
+    validations:
+      required: true
+
+  - type: textarea
+    id: competitors
+    attributes:
+      label: Competing Products
+      description: What similar products already exist in the market? Why don't they work for you? (Too expensive, too complex, or doesn't solve the core problem?)
+    validations:
+      required: false
+
+  - type: textarea
+    id: success-definition
+    attributes:
+      label: Definition of Success
+      description: What would the App need to achieve for you to be willing to recommend it to your friends?
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 4. Commitment & Collaboration (Co-founder Spirit)
+
+  - type: textarea
+    id: distribution
+    attributes:
+      label: Distribution & Operations
+      description: After the product launches, are you willing to find the first 100 users and collect feedback?
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: collaboration-mode
+    attributes:
+      label: Preferred Collaboration Mode
+      description: Please select your preferred collaboration mode
+      options:
+        - label: "**Open Source / Free:** Solve the problem, project is completely open source/free."
+        - label: "**Commercial Venture:** Operate as a Co-founder, share revenue."
+        - label: "**Paid Priority:** Pay development fees for fast delivery and deep customization."
